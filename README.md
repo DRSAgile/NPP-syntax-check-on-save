@@ -5,7 +5,7 @@ Despite the name, it actually does not help with setting it up, it only helps wh
 
 Lots of steps are necessary for the script to work as intended:
 
-    **in Windows:**
+**in Windows:**
 
 1. install MAMP (uncheck "MAMP Pro", if you do not have a paid account) or a standalone PHP engine
 
@@ -13,14 +13,14 @@ Lots of steps are necessary for the script to work as intended:
 
 3. set "Run as administrator" in "Compatibility" section of NPP executable's settings OR -- since the flag is sometimes dropped with NPP updates -- use Task Scheduler to launch it with elevated rights
 
-    **in NPP:**
+**in NPP:**
 
 4. install JSLint plugin via "Plugins", "Plagins Admin..." menu
 
 5. install NPPExect plugin via "Plugins", "Plagins Admin..." menu
 
 
-    **in NppExec plugin:**
+**in NppExec plugin within NPP:**
 
 6. in "Console Output..." menu, set "Console input/output encoding" to "UTF8/UTF" as otherwise non-ANSI paths will not be understood
 
@@ -35,12 +35,12 @@ cmd.exe /C start "" "C:\Program Files\AutoHotkey\AutoHotkey.exe" "C:\Users\zxs\O
 10. in "Advanced Options..." menu, select this (#9) script in "Associated scripts" field 
 
 
-    **in NPP:**
+**in NPP again:**
 
 11. restart NPP
 
 12. assign specifically "alt+shift+F6" hotkey to the script #9) script via "Settings", "Shortcut Mapper...", "Plugin commands", "Execute NppExec Script..." (care for possible shortcut key conflicts)
 
 13. for AHK's Function List panel to work follow the instructions like [this](https://www.autohotkey.com/boards/viewtopic.php?p=366054#p366054) and [this](https://npp-user-manual.org/docs/function-list/).
-This will lead to updating `%APPDATA%\notepad++\functionList\overrideMap.xml` file and creating "akh.xml" in `%APPDATA%\notepad++\functionList\`
-BE CAREFUL to correctly put the name of *User Defined Language* in `overrideMap.xml`.
+This will lead to updating `%APPDATA%\notepad++\functionList\overrideMap.xml` file and creating "akh.xml" in `%APPDATA%\notepad++\functionList\`.
+Be careful to correctly put the name of *User Defined Language* in `overrideMap.xml`.
