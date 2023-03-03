@@ -1,7 +1,13 @@
-﻿; MUST be saved as "UTF-8 with BOM" at all times, unlike JS where it is better without BOM
+; By DRSAgile, https://github.com/DRSAgile/NPP-syntax-check-on-save/
+;
+; This file MUST be saved with "UTF-8 with BOM" encoding at all times, unlike JS where it is better without BOM
+;
+;
+;The necessary steps for the script to work as intended:
 ;
 ;
 ; in Windows:
+;
 ; 1. install MAMP (uncheck "MAMP Pro", if you do not have a paid account) or a standalone PHP engine
 ;
 ; 2. set "Run as administrator" in "Compatibility" section of AHK executable's settings
@@ -15,7 +21,7 @@
 ; 5. install NPPExect plugin via "Plugins", "Plagins Admin..." menu
 ;
 ;
-; in NppExec plugin:
+; in NppExec plugin within NPP:
 ;
 ; 6. in "Console Output..." menu, set "Console input/output encoding" to "UTF8/UTF" as otherwise non-ANSI paths will not be understood
 ;
@@ -30,15 +36,15 @@
 ; 10. in "Advanced Options..." menu, select this (#9) script in "Associated scripts" field 
 ;
 ;
-; in NPP:
+; in NPP again:
 ;
 ; 11. restart NPP
 ;
 ; 12. assign specifically "alt+shift+F6" hotkey to the script #9) script via "Settings", "Shortcut Mapper...", "Plugin commands", "Execute NppExec Script..." (care for possible shortcut key conflicts)
 ;
 ; 13. for AHK's Function List panel to work follow the instruction: https://www.autohotkey.com/boards/viewtopic.php?p=366054#p366054 and https://npp-user-manual.org/docs/function-list/
-; this will lead to updating %APPDATA%\notepad++\functionList\overrideMap.xml and to creating "akh.xml" in %APPDATA%\notepad++\functionList\
-; BE CAREFUL to correctly put the name of User Defined Language in overrideMap.xml
+; this will lead to updating %APPDATA%\notepad++\functionList\overrideMap.xml and to creating "akh.xml" in %APPDATA%\notepad++\functionList\.
+; Be careful to correctly put the name of User Defined Language in overrideMap.xml
 
 #Persistent
 #SingleInstance force
